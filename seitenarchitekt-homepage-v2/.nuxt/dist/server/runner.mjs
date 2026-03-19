@@ -1,0 +1,1 @@
+export { default } from "file:///D:/SeitenArchitekt/seitenarchitekt-homepage-modern-dark/seitenarchitekt-homepage-v2/node_modules/@nuxt/vite-builder/dist/vite-node-runner.mjs"

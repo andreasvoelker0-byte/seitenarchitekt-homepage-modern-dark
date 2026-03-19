@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #090909;
+  --bg-soft: #11100d;
+  --panel: rgba(13, 13, 13, 0.68);
+  --line: rgba(204, 168, 96, 0.14);
+  --line-strong: rgba(204, 168, 96, 0.3);
+  --text: #f2ece2;
+  --muted: #b7ab9a;
+  --accent: #c9a76a;
+  --accent-soft: rgba(201, 167, 106, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 12%, rgba(201, 167, 106, 0.08), transparent 24%),
+    radial-gradient(circle at 80% 40%, rgba(201, 167, 106, 0.05), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 24%),
+    var(--bg);
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before,
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  background:
+    linear-gradient(to right, transparent 18%, rgba(201, 167, 106, 0.065) 18.05%, transparent 18.1%),
+    linear-gradient(to right, transparent 50%, rgba(201, 167, 106, 0.05) 50.05%, transparent 50.1%),
+    linear-gradient(to right, transparent 82%, rgba(201, 167, 106, 0.05) 82.05%, transparent 82.1%),
+    linear-gradient(to bottom, transparent 18%, rgba(201, 167, 106, 0.045) 18.05%, transparent 18.1%),
+    linear-gradient(to bottom, transparent 50%, rgba(201, 167, 106, 0.04) 50.05%, transparent 50.1%),
+    linear-gradient(to bottom, transparent 82%, rgba(201, 167, 106, 0.04) 82.05%, transparent 82.1%);
+  opacity: 0.5;
+}
+
+body::after {
+  background-image:
+    radial-gradient(rgba(255, 248, 232, 0.06) 0.7px, transparent 0.7px),
+    radial-gradient(rgba(201, 167, 106, 0.08) 0.5px, transparent 0.5px);
+  background-position: 0 0, 22px 18px;
+  background-size: 36px 36px, 46px 46px;
+  opacity: 0.09;
+  mix-blend-mode: screen;
+}
+
+::selection {
+  background: rgba(201, 167, 106, 0.32);
+  color: #fffaf2;
+}
+
+img {
+  display: block;
+}
+
+.site-theme {
+  min-height: 100vh;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-[1380px] px-6 sm:px-8 lg:px-12;
+}
+
+.section-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
+  color: var(--text);
+  @apply text-4xl sm:text-5xl lg:text-6xl;
+}
+
+.section-copy {
+  max-width: 46rem;
+  color: var(--muted);
+  @apply text-base leading-8 sm:text-lg;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  @apply text-[10px] font-semibold sm:text-xs;
+}
+
+.section-label::after {
+  content: '';
+  width: 4rem;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.lux-card {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.88), rgba(9, 9, 9, 0.78));
+  border: 1px solid rgba(255, 244, 223, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.panel {
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0.88), rgba(9, 9, 9, 0.78));
+  border: 1px solid rgba(255, 244, 223, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+  @apply rounded-[2rem];
+}
+
+.gold-button {
+  background: linear-gradient(180deg, #d5b680, #bf9857);
+  color: #16110b;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  @apply inline-flex items-center justify-center gap-3 rounded-none px-6 py-4 text-[11px] font-semibold transition duration-300;
+}
+
+.gold-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(201, 167, 106, 0.22);
+}
+
+.ghost-button {
+  color: var(--text);
+  border-bottom: 1px solid rgba(201, 167, 106, 0.35);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  @apply inline-flex items-center gap-3 px-0 py-4 text-[11px] font-semibold transition duration-300;
+}
+
+.ghost-button:hover {
+  color: var(--accent);
+}
+
+.nav-link {
+  position: relative;
+  color: rgba(242, 236, 226, 0.76);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  @apply px-3 py-2 text-[11px] transition duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.3rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 260ms ease;
+}
+
+.nav-link:hover,
+.nav-link-active {
+  color: var(--text);
+}
+
+.nav-link:hover::after,
+.nav-link-active::after {
+  transform: scaleX(1);
+}
+
+.eyebrow-text {
+  color: var(--accent);
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+}
+
+.metric-value {
+  font-family: 'Fraunces', Georgia, serif;
+  color: var(--accent);
+  @apply text-4xl;
+}
+
+.display-face {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.metric-label {
+  color: rgba(201, 167, 106, 0.72);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  @apply mt-2 text-[10px] font-semibold;
+}
+
+.tiny-kicker {
+  color: var(--accent);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  @apply text-[10px] font-semibold;
+}
+
+.number-box {
+  color: var(--accent);
+  border: 1px solid rgba(201, 167, 106, 0.35);
+  @apply flex h-12 w-12 items-center justify-center text-sm font-semibold;
+}
+
+.split-line {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(201, 167, 106, 0.2), transparent);
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  translate: -50% -50%;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #d5b680;
+  box-shadow: 0 0 18px rgba(213, 182, 128, 0.5);
+  z-index: 2;
+}
+
+.cursor-ring {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(213, 182, 128, 0.46);
+  z-index: 1;
+}
+
+[data-reveal] {
+  will-change: transform, opacity;
+}
+
+@media (max-width: 1023px) {
+  body::before {
+    opacity: 0.25;
+  }
+
+  .section-title {
+    letter-spacing: -0.03em;
+  }
+}
+
+
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 360ms ease;
+}
+
+.page-fade-enter-from,
+.page-fade-leave-to {
+  opacity: 0;
+}
