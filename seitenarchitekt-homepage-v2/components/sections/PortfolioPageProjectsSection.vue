@@ -42,9 +42,9 @@ defineProps<{
             <p v-for="paragraph in item.paragraphs" :key="paragraph" class="mt-5 text-base leading-8 text-[var(--muted)]">
               {{ paragraph }}
             </p>
-            <NuxtLink :to="item.to" class="ghost-button mt-6">
+            <a :href="item.to" class="ghost-button mt-6">
               {{ item.linkLabel }}
-            </NuxtLink>
+            </a>
           </div>
         </article>
       </div>

@@ -35,60 +35,60 @@ export const portfolioContent = {
     title: 'Vier Konzeptseiten für unterschiedliche Gewerke',
     items: [
       {
-        chip: 'Elektrobetrieb',
-        previewTitle: 'Konzept: Elektrokompetenz Berlin',
-        previewImage: '/images/christopher-gower-m_HRfLhgABo-unsplash.jpg',
-        heading: 'Modern, technisch präzise, schnell erreichbar',
+        chip: 'Voltwerk Berlin',
+        previewTitle: 'Elektrokompetenz Berlin',
+        previewImage: '/images/portfolio/voltwerk-berlin-hero.jpg',
+        heading: 'Elektroinstallation, Sanierung und Smart Home',
         intro:
-          'Diese Konzeptseite stellt einen Elektrobetrieb als strukturierten und zuverlässigen Partner für private und gewerbliche Kunden dar.',
+          'Die Konzeptseite für Voltwerk Berlin zeigt einen Elektrobetrieb mit klarem Leistungsprofil, technischer Souveränität und schneller Kontaktführung.',
         paragraphs: [
-          'Die Seitenlogik priorisiert Elektroinstallationen, Smart-Home-Lösungen, Altbausanierung und Kundendienst. Wichtig war eine klare Hierarchie mit schnellen Kontaktoptionen für dringende Anfragen.',
-          'Wichtig in diesem Konzept: saubere Kompetenzdarstellung, kurze Entscheidungswege und starke Erreichbarkeit.'
+          'Im Fokus stehen Elektroinstallationen, Altbausanierung, Smart-Home-Lösungen und saubere technische Umsetzung für Privat- und Gewerbekunden in Berlin.',
+          'Die Hero-Bildsprache und die dunkle, präzise Gestaltung unterstreichen Zuverlässigkeit, Struktur und den Anspruch an moderne Elektrotechnik.'
         ],
-        linkLabel: 'Konzeptseite ansehen →',
-        to: '/portfolio/webdesign-elektrobetrieb'
+        linkLabel: 'Konzeptseite ansehen ->',
+        to: '/portfolio/voltwerk-berlin.html'
       },
       {
-        chip: 'Sanitärtechnik',
-        previewTitle: 'Konzept: Sanitär & Badmodernisierung',
-        previewImage: '/images/maik-jonietz-_yMciiStJyY-unsplash.jpg',
-        heading: 'Ruhig, hochwertig, wohnnah geführt',
+        chip: 'Klarbad Berlin',
+        previewTitle: 'Sanitär & Badmodernisierung',
+        previewImage: '/images/portfolio/klarbad-berlin-hero.jpg',
+        heading: 'Badmodernisierung, Sanitärinstallation und Reparaturservice',
         intro:
-          'Diese Konzeptseite zeigt einen Sanitärbetrieb als vertrauensvollen Partner für Badmodernisierung, Installationen und alltagsnahe Reparaturen in Berlin.',
+          'Die Konzeptseite für Klarbad Berlin inszeniert einen Sanitärbetrieb als ruhigen, hochwertigen Partner für Badumbauten, Installationen und alltagsnahe Reparaturen.',
         paragraphs: [
-          'Die Seitenarchitektur priorisiert Erreichbarkeit, saubere Abläufe und hochwertige Badqualität. Reparaturservice bleibt glaubwürdig präsent, ohne dass die Seite in eine laute Notdienst-Optik kippt.',
-          'Wichtig in diesem Konzept: Calm Domestic Confidence, klare Serviceführung und ein sichtbar kuratiertes Premium-Niveau.'
+          'Die Seite priorisiert vertrauensvolle Beratung, saubere Abläufe und eine wohnliche Bildsprache, damit Badmodernisierung und Sanitärservice hochwertig und zugänglich wirken.',
+          'Das Hero-Bild aus der Konzeptseite wurde direkt in die Karte übernommen, damit Stil, Stimmung und Leistungsversprechen schon in der Portfolio-Übersicht sichtbar sind.'
         ],
-        linkLabel: 'Konzeptseite ansehen ?',
-        to: '/portfolio/webdesign-sanitaerbetrieb'
+        linkLabel: 'Konzeptseite ansehen ->',
+        to: '/portfolio/klarbad-berlin.html'
       },
       {
-        chip: 'Malerbetrieb',
-        previewTitle: 'Konzept: Farbwerk & Raumgestaltung',
-        previewImage: '/images/daniil-komov-RdeKfL3w344-unsplash.jpg',
-        heading: 'Hochwertig, ästhetisch, detailbewusst',
+        chip: 'Atelier Farbe Berlin',
+        previewTitle: 'Farbwelt & Raumgestaltung',
+        previewImage: '/images/portfolio/atelier-farbe-berlin-hero.jpg',
+        heading: 'Innenräume, Fassaden und Farbkonzepte',
         intro:
-          'Diese Konzeptseite ist visuell klarer und emotionaler aufgebaut, um die handwerkliche Qualität eines Malerbetriebs zu transportieren.',
+          'Die Konzeptseite für Atelier Farbe Berlin ist stärker editorial gedacht und rückt Materialität, Farbwirkung und handwerkliche Qualität in den Vordergrund.',
         paragraphs: [
-          'Schwerpunkte sind Innenräume, Fassaden, Renovierung und Farbkonzepte. Die Gestaltung betont Sauberkeit und Stil, ohne die Nutzerführung oder Kontaktbarkeit zu vernachlässigen.',
-          'Wichtig in diesem Konzept: starke Bildwirkung, klare Leistungsdarstellung und professionelle Gesamtanmutung.'
+          'Schwerpunkte sind Innenräume, Fassaden, Renovierungen und individuelle Farbkonzepte. Die Gestaltung verbindet starke Bildwirkung mit klarer Nutzerführung.',
+          'Die Kartenansicht greift das Hero-Motiv der Konzeptseite auf, damit die visuelle Handschrift des Maler- und Gestaltungskonzepts direkt wiedererkennbar ist.'
         ],
-        linkLabel: 'Konzeptseite ansehen →',
-        to: '/portfolio/webdesign-malerbetrieb'
+        linkLabel: 'Konzeptseite ansehen ->',
+        to: '/portfolio/atelier-farbe-berlin.html'
       },
       {
-        chip: 'Bauunternehmen',
-        previewTitle: 'Konzept: Bauplan Projektpartner',
-        previewImage: '/images/christopher-gower-m_HRfLhgABo-unsplash.jpg',
-        heading: 'Strukturiert, belastbar, unternehmerisch',
+        chip: 'Schneider Bau Berlin',
+        previewTitle: 'Bauplan Projektordner',
+        previewImage: '/images/portfolio/schneider-bau-berlin-hero.jpg',
+        heading: 'Rohbau, Sanierung und Umbau',
         intro:
-          'Das Bauunternehmen-Konzept legt den Fokus auf Verlässlichkeit, Leistungsstärke und projektorientierte Kommunikation.',
+          'Die Konzeptseite für Schneider Bau Berlin setzt auf eine robuste, vertrauensstarke Präsentation für Bauvorhaben mit klarer Projektführung.',
         paragraphs: [
-          'Themen wie Rohbau, Sanierung, Umbau und Projektbegleitung werden in einem robusten Aufbau präsentiert. Der Eindruck ist klar, organisiert und auf langfristige Zusammenarbeit ausgelegt.',
-          'Wichtig in diesem Konzept: starke Struktur, klarer Leistungsrahmen und ein professioneller Vertrauensaufbau.'
+          'Rohbau, Sanierung, Umbau und Ablauftransparenz werden in einem strukturierten Raster gezeigt, das auf Zuverlässigkeit und belastbare Zusammenarbeit einzahlt.',
+          'Auch hier ist das Hero-Bild aus der HTML-Konzeptseite in die Portfolio-Karte integriert, damit die Seite bereits in der Auswahl ihr eigenes Profil bekommt.'
         ],
-        linkLabel: 'Konzeptseite ansehen ?',
-        to: '/portfolio/webdesign-bauunternehmen'
+        linkLabel: 'Konzeptseite ansehen ->',
+        to: '/portfolio/schneider-bau-berlin.html'
       }
     ]
   },
