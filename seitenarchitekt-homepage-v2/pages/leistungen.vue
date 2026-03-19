@@ -3,6 +3,7 @@ import { homeContent } from '~/data/homeContent'
 import { servicesContent } from '~/data/servicesContent'
 
 const { initAnimations, destroyAnimations } = useServicesGsap()
+const resolvedServicesContent = useResolvedSiteAssets(servicesContent)
 
 definePageMeta({
   pageTransition: {
@@ -35,13 +36,13 @@ onBeforeUnmount(() => {
     <AppHeader :links="homeContent.navLinks" />
 
     <main>
-      <ServicesPageHeroSection :content="servicesContent.hero" />
-      <ServicesPageIntroSection :content="servicesContent.intro" />
-      <ServicesPagePackagesSection :content="servicesContent.packages" />
-      <ServicesPageQualitySection :content="servicesContent.quality" />
-      <ServicesPageExtensionsSection :content="servicesContent.extensions" />
-      <ServicesPageProcessSection :content="servicesContent.process" />
-      <ServicesPageFinalCtaSection :content="servicesContent.finalCta" />
+      <ServicesPageHeroSection :content="resolvedServicesContent.hero" />
+      <ServicesPageIntroSection :content="resolvedServicesContent.intro" />
+      <ServicesPagePackagesSection :content="resolvedServicesContent.packages" />
+      <ServicesPageQualitySection :content="resolvedServicesContent.quality" />
+      <ServicesPageExtensionsSection :content="resolvedServicesContent.extensions" />
+      <ServicesPageProcessSection :content="resolvedServicesContent.process" />
+      <ServicesPageFinalCtaSection :content="resolvedServicesContent.finalCta" />
     </main>
 
     <AppFooter

@@ -3,6 +3,7 @@ import { aboutContent } from '~/data/aboutContent'
 import { homeContent } from '~/data/homeContent'
 
 const { initAnimations, destroyAnimations } = useAboutGsap()
+const resolvedAboutContent = useResolvedSiteAssets(aboutContent)
 
 definePageMeta({
   pageTransition: {
@@ -35,13 +36,13 @@ onBeforeUnmount(() => {
     <AppHeader :links="homeContent.navLinks" />
 
     <main>
-      <AboutPageHeroSection :content="aboutContent.hero" />
-      <AboutPageIntroSection :content="aboutContent.intro" />
-      <AboutPageApproachSection :content="aboutContent.approach" />
-      <AboutPageWhySection :content="aboutContent.why" />
-      <AboutPageValuesSection :content="aboutContent.values" />
-      <AboutPagePersonalSection :content="aboutContent.personal" />
-      <AboutPageFinalCtaSection :content="aboutContent.finalCta" />
+      <AboutPageHeroSection :content="resolvedAboutContent.hero" />
+      <AboutPageIntroSection :content="resolvedAboutContent.intro" />
+      <AboutPageApproachSection :content="resolvedAboutContent.approach" />
+      <AboutPageWhySection :content="resolvedAboutContent.why" />
+      <AboutPageValuesSection :content="resolvedAboutContent.values" />
+      <AboutPagePersonalSection :content="resolvedAboutContent.personal" />
+      <AboutPageFinalCtaSection :content="resolvedAboutContent.finalCta" />
     </main>
 
     <AppFooter

@@ -3,6 +3,7 @@ import { homeContent } from '~/data/homeContent'
 import { portfolioContent } from '~/data/portfolioContent'
 
 const { initAnimations, destroyAnimations } = usePortfolioGsap()
+const resolvedPortfolioContent = useResolvedSiteAssets(portfolioContent)
 
 definePageMeta({
   pageTransition: {
@@ -35,12 +36,12 @@ onBeforeUnmount(() => {
     <AppHeader :links="homeContent.navLinks" />
 
     <main>
-      <PortfolioPageHeroSection :content="portfolioContent.hero" />
-      <PortfolioPageIntroSection :content="portfolioContent.intro" />
-      <PortfolioPageProjectsSection :content="portfolioContent.projects" />
-      <PortfolioPageQualitySection :content="portfolioContent.quality" />
-      <PortfolioPageApproachSection :content="portfolioContent.approach" />
-      <PortfolioPageFinalCtaSection :content="portfolioContent.finalCta" />
+      <PortfolioPageHeroSection :content="resolvedPortfolioContent.hero" />
+      <PortfolioPageIntroSection :content="resolvedPortfolioContent.intro" />
+      <PortfolioPageProjectsSection :content="resolvedPortfolioContent.projects" />
+      <PortfolioPageQualitySection :content="resolvedPortfolioContent.quality" />
+      <PortfolioPageApproachSection :content="resolvedPortfolioContent.approach" />
+      <PortfolioPageFinalCtaSection :content="resolvedPortfolioContent.finalCta" />
     </main>
 
     <AppFooter

@@ -4,13 +4,14 @@ import { homeContent } from '~/data/homeContent'
 
 const router = useRouter()
 const { initAnimations, destroyAnimations } = useBlogPostGsap()
+const resolvedPosts = useResolvedSiteAssets(blogContent.posts)
 
 const slug = computed(() => {
   const value = router.currentRoute.value.params.slug
   return Array.isArray(value) ? value[0] ?? '' : value ?? ''
 })
 
-const post = computed(() => blogContent.posts.find(item => item.slug === slug.value) ?? null)
+const post = computed(() => resolvedPosts.find(item => item.slug === slug.value) ?? null)
 
 definePageMeta({
   pageTransition: {

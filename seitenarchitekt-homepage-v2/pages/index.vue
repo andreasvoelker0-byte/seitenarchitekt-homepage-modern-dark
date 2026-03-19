@@ -3,6 +3,7 @@ import { homeContent } from '~/data/homeContent'
 
 const { initAnimations, destroyAnimations } = useHomeGsap()
 const modalOpen = ref(false)
+const resolvedHomeContent = useResolvedSiteAssets(homeContent)
 
 useHead({
   title: 'Website erstellen lassen in Berlin | Seiten Architekt',
@@ -26,27 +27,27 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="relative overflow-hidden">
-    <AppHeader :links="homeContent.navLinks" />
+    <AppHeader :links="resolvedHomeContent.navLinks" />
 
     <main>
-      <HeroSection :content="homeContent.hero" />
-      <ProblemSection :content="homeContent.problems" @open-modal="modalOpen = true" />
-      <ServicesSection :content="homeContent.services" />
-      <DifferentiatorsSection :content="homeContent.differentiators" />
-      <ProcessSection :content="homeContent.process" />
-      <PortfolioSection :content="homeContent.portfolio" />
-      <AboutSection :content="homeContent.about" />
-      <BlogSection :content="homeContent.blog" />
-      <CtaBandSection :content="homeContent.ctaBand" />
-      <ContactSection :content="homeContent.contact" />
+      <HeroSection :content="resolvedHomeContent.hero" />
+      <ProblemSection :content="resolvedHomeContent.problems" @open-modal="modalOpen = true" />
+      <ServicesSection :content="resolvedHomeContent.services" />
+      <DifferentiatorsSection :content="resolvedHomeContent.differentiators" />
+      <ProcessSection :content="resolvedHomeContent.process" />
+      <PortfolioSection :content="resolvedHomeContent.portfolio" />
+      <AboutSection :content="resolvedHomeContent.about" />
+      <BlogSection :content="resolvedHomeContent.blog" />
+      <CtaBandSection :content="resolvedHomeContent.ctaBand" />
+      <ContactSection :content="resolvedHomeContent.contact" />
     </main>
 
     <AppFooter
-      :navigation="homeContent.footer.navigation"
-      :services="homeContent.footer.services"
-      :legal="homeContent.footer.legal"
+      :navigation="resolvedHomeContent.footer.navigation"
+      :services="resolvedHomeContent.footer.services"
+      :legal="resolvedHomeContent.footer.legal"
     />
 
-    <SolutionModal :open="modalOpen" :content="homeContent.problems.modal" @close="modalOpen = false" />
+    <SolutionModal :open="modalOpen" :content="resolvedHomeContent.problems.modal" @close="modalOpen = false" />
   </div>
 </template>

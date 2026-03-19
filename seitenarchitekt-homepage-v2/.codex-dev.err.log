@@ -1,3 +1,16 @@
 
 [43m[30m WARN [39m[49m Slow module [36m@nuxt/devtools[39m took [36m17838.53ms[39m to setup.
 
+
+[43m[30m WARN [39m[49m Slow module [36m@nuxt/devtools[39m took [36m64899.1ms[39m to setup.
+
+
+[41m[30m ERROR [39m[49m [31mWebSocket server error: Port 24678 is already in use[39m
+
+
+[90m[[90mnitro[90m][39m [41m[30m ERROR [39m[49m Error: Could not load D:/SeitenArchitekt/seitenarchitekt-homepage-modern-dark/seitenarchitekt-homepage-v2/.nuxt//dist/server/server.mjs (imported by node_modules/@nuxt/nitro-server/dist/runtime/utils/renderer/build-files.mjs): ENOENT: no such file or directory, open 'D:\SeitenArchitekt\seitenarchitekt-homepage-modern-dark\seitenarchitekt-homepage-v2\.nuxt\dist\server\server.mjs'
+
+
+undefined
+
+^C

@@ -3,6 +3,7 @@ import { blogContent } from '~/data/blogContent'
 import { homeContent } from '~/data/homeContent'
 
 const { initAnimations, destroyAnimations } = useBlogGsap()
+const resolvedBlogContent = useResolvedSiteAssets(blogContent)
 
 definePageMeta({
   pageTransition: {
@@ -35,11 +36,11 @@ onBeforeUnmount(() => {
     <AppHeader :links="homeContent.navLinks" />
 
     <main>
-      <BlogPageHeroSection :content="blogContent.hero" />
-      <BlogPageIntroSection :content="blogContent.intro" />
-      <BlogPageFeaturedSection :post="blogContent.posts[0]" />
-      <BlogPageListSection :header="blogContent.listHeader" :posts="blogContent.posts" />
-      <BlogPageFinalCtaSection :content="blogContent.finalCta" />
+      <BlogPageHeroSection :content="resolvedBlogContent.hero" />
+      <BlogPageIntroSection :content="resolvedBlogContent.intro" />
+      <BlogPageFeaturedSection :post="resolvedBlogContent.posts[0]" />
+      <BlogPageListSection :header="resolvedBlogContent.listHeader" :posts="resolvedBlogContent.posts" />
+      <BlogPageFinalCtaSection :content="resolvedBlogContent.finalCta" />
     </main>
 
     <AppFooter

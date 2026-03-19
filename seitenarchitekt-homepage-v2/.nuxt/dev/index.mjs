@@ -636,6 +636,51 @@ const _inlineRuntimeConfig = {
       "/__nuxt_error": {
         "cache": false
       },
+      "/**": {
+        "prerender": true
+      },
+      "/": {
+        "prerender": true
+      },
+      "/ueber-mich": {
+        "prerender": true
+      },
+      "/leistungen": {
+        "prerender": true
+      },
+      "/portfolio": {
+        "prerender": true
+      },
+      "/blog": {
+        "prerender": true
+      },
+      "/impressum": {
+        "prerender": true
+      },
+      "/datenschutz": {
+        "prerender": true
+      },
+      "/blog/seo-fuer-handwerker-google-berlin": {
+        "prerender": true
+      },
+      "/blog/5-fehler-handwerker-websites": {
+        "prerender": true
+      },
+      "/blog/mobile-website-handwerker": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-elektrobetrieb": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-sanitaerbetrieb": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-malerbetrieb": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-bauunternehmen": {
+        "prerender": true
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -645,6 +690,48 @@ const _inlineRuntimeConfig = {
         "headers": {
           "cache-control": "public, max-age=1, immutable"
         }
+      },
+      "//_payload.json": {
+        "prerender": true
+      },
+      "/ueber-mich/_payload.json": {
+        "prerender": true
+      },
+      "/leistungen/_payload.json": {
+        "prerender": true
+      },
+      "/portfolio/_payload.json": {
+        "prerender": true
+      },
+      "/blog/_payload.json": {
+        "prerender": true
+      },
+      "/impressum/_payload.json": {
+        "prerender": true
+      },
+      "/datenschutz/_payload.json": {
+        "prerender": true
+      },
+      "/blog/seo-fuer-handwerker-google-berlin/_payload.json": {
+        "prerender": true
+      },
+      "/blog/5-fehler-handwerker-websites/_payload.json": {
+        "prerender": true
+      },
+      "/blog/mobile-website-handwerker/_payload.json": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-elektrobetrieb/_payload.json": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-sanitaerbetrieb/_payload.json": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-malerbetrieb/_payload.json": {
+        "prerender": true
+      },
+      "/portfolio/webdesign-bauunternehmen/_payload.json": {
+        "prerender": true
       }
     }
   },

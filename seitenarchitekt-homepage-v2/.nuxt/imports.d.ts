@@ -35,5 +35,6 @@ export { useBlogGsap } from '../composables/useBlogGsap';
 export { useBlogPostGsap } from '../composables/useBlogPostGsap';
 export { useHomeGsap } from '../composables/useHomeGsap';
 export { usePortfolioGsap } from '../composables/usePortfolioGsap';
+export { useResolvedSiteAssets } from '../composables/useResolvedSiteAssets';
 export { useServicesGsap } from '../composables/useServicesGsap';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
