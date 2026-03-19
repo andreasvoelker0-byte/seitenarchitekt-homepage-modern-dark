@@ -21,6 +21,15 @@ const props = defineProps<{
 const { app } = useRuntimeConfig()
 
 const resolveHref = (to: string) => withBase(to, app.baseURL)
+
+const getProjectId = (to: string) =>
+  to
+    .split('/')
+    .filter(Boolean)
+    .at(-1)
+    ?.replace(/\.html$/i, '')
+    .replace(/[^a-z0-9-]/gi, '')
+    .toLowerCase() ?? ''
 </script>
 
 <template>
@@ -32,7 +41,13 @@ const resolveHref = (to: string) => withBase(to, app.baseURL)
       </div>
 
       <div class="mt-14 grid gap-8 lg:grid-cols-2">
-        <article v-for="item in props.content.items" :key="item.previewTitle" data-reveal class="panel overflow-hidden p-0">
+        <article
+          v-for="item in props.content.items"
+          :id="getProjectId(item.to)"
+          :key="item.previewTitle"
+          data-reveal
+          class="panel overflow-hidden p-0"
+        >
           <div class="relative border-b border-[rgba(201,167,106,0.12)]">
             <img :src="item.previewImage" alt="Konzept-Vorschau" class="h-56 w-full object-cover sm:h-64" />
             <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,8,8,0.18),rgba(8,8,8,0.82))]" />
