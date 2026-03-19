@@ -1,0 +1,11 @@
+node_modules/
+.nuxt/
+.output/
+dist/
+docs/
+
+*.log
+.codex-dev.log
+.codex-dev.err.log
+.codex-dev-root.log
+.codex-dev-root.err.log

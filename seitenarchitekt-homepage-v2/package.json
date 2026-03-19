@@ -6,7 +6,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "generate": "nuxt generate",
-    "generate:gh-pages": "powershell -Command \"$env:NUXT_APP_BASE_URL='/seitenarchitekt-homepage-modern-dark/'; $env:NUXT_OUTPUT_DIR='docs'; npm run generate; node scripts/ensure-nojekyll.mjs\"",
+    "generate:gh-pages": "powershell -Command \"$env:NUXT_APP_BASE_URL='/seitenarchitekt-homepage-modern-dark/'; $env:NUXT_OUTPUT_DIR='docs'; npm run generate; $env:NUXT_OUTPUT_DIR='docs'; node scripts/ensure-nojekyll.mjs\"",
     "generate:dreamhost": "powershell -Command \"$env:NUXT_APP_BASE_URL='/'; $env:NUXT_OUTPUT_DIR='dist'; npm run generate\"",
     "preview": "nuxt preview"
   },

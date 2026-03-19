@@ -1,6 +1,6 @@
 # SeitenArchitekt Homepage
 
-Nuxt 3 Projekt für lokale Entwicklung, DreamHost-Deployments und eine statische GitHub Pages Project Site.
+Nuxt 3 Projekt für lokale Entwicklung, automatische GitHub-Pages-Vorschau und statische DreamHost-Deployments.
 
 ## Lokal entwickeln
 
@@ -11,7 +11,7 @@ npm run dev
 
 Lokal läuft die Seite unter der Root-URL `/`.
 
-## Build
+## DreamHost Build
 
 ```bash
 npm run generate:dreamhost
@@ -19,21 +19,21 @@ npm run generate:dreamhost
 
 Das generierte Ergebnis für ein Root-Deployment liegt danach in `dist/`.
 
-## GitHub Pages Build
+## GitHub Pages
+
+Das Repository enthält einen Workflow unter [pages.yml](D:/SeitenArchitekt/seitenarchitekt-homepage-modern-dark/seitenarchitekt-homepage-v2/.github/workflows/pages.yml), der bei Push auf `main` automatisch eine GitHub-Pages-Vorschau baut und veröffentlicht.
+
+In GitHub unter `Settings -> Pages`:
+
+- `Source`: `GitHub Actions`
+
+## Optionaler lokaler GitHub-Pages-Build
 
 ```bash
 npm run generate:gh-pages
 ```
 
 Das generierte Ergebnis für GitHub Pages liegt danach in `docs/`.
-
-## GitHub Pages
-
-In GitHub unter `Settings -> Pages`:
-
-- `Source`: `Deploy from a branch`
-- `Branch`: `main`
-- `Folder`: `/docs`
 
 ## Hinweise
 
