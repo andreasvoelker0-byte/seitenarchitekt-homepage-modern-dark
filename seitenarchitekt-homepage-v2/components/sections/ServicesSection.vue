@@ -27,7 +27,7 @@ defineProps<{
         </div>
       </div>
 
-      <div class="border border-[rgba(201,167,106,0.12)] bg-[rgba(7,7,7,0.45)]">
+      <div class="border border-[rgba(201,167,106,0.12)] bg-[rgba(70, 68, 68, 0.45)]">
         <article v-for="item in content.items" :key="item.title" data-reveal class="grid gap-8 border-b border-[rgba(201,167,106,0.12)] px-6 py-8 sm:px-10 sm:py-10 lg:grid-cols-[72px_minmax(0,1fr)_auto] lg:items-start last:border-b-0">
           <div class="tiny-kicker pt-1">{{ item.number }}</div>
           <div>
