@@ -124,7 +124,7 @@ img {
   border: 1px solid rgba(255, 244, 223, 0.08);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(18px);
-  @apply rounded-[2rem];
+  @apply rounded-[0.2rem];
 }
 
 .gold-button {
