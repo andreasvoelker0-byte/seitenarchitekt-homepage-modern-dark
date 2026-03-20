@@ -32,7 +32,7 @@ defineProps<{
       </div>
 
       <div class="border border-[rgba(201,167,106,0.12)] bg-[rgba(8,8,8,0.6)] px-7 py-8 sm:px-10 sm:py-10">
-        <h3 data-reveal class="display-face text-4xl font-normal tracking-[-0.03em] text-[var(--text)]">{{ content.formTitle }}</h3>
+        <p data-reveal class="display-face text-4xl font-normal tracking-[-0.03em] text-[var(--text)]">{{ content.formTitle }}</p>
 
         <form class="mt-8 grid gap-4">
           <input data-reveal type="text" placeholder="Name" class="border border-[rgba(201,167,106,0.12)] bg-[rgba(5,5,5,0.52)] px-5 py-4 text-[var(--text)] outline-none transition placeholder:text-[rgba(183,171,154,0.55)] focus:border-[rgba(201,167,106,0.35)]" />

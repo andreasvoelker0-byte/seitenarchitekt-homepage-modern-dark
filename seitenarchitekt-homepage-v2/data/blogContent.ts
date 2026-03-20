@@ -40,6 +40,7 @@ export const blogContent = {
       title: 'SEO für Handwerker: So wirst du bei Google in Berlin gefunden',
       excerpt: 'Lokale Suchmaschinenoptimierung erklärt – ohne technischen Fachjargon.',
       readingTime: '4 Min. Lesezeit',
+      linkLabel: 'SEO-Artikel lesen',
       image: '/images/maik-jonietz-_yMciiStJyY-unsplash.jpg',
       seo: {
         title: 'SEO für Handwerker: So wirst du bei Google in Berlin gefunden | SeitenArchitekt',
@@ -82,6 +83,7 @@ export const blogContent = {
       title: '5 Fehler, die Handwerker-Websites häufig machen',
       excerpt: 'Die häufigsten Probleme, die dazu führen, dass Websites keine Anfragen bringen.',
       readingTime: '5 Min. Lesezeit',
+      linkLabel: 'Fehler-Check lesen',
       image: '/images/christopher-gower-m_HRfLhgABo-unsplash.jpg',
       seo: {
         title: '5 Fehler, die Handwerker-Websites häufig machen | SeitenArchitekt',
@@ -138,6 +140,7 @@ export const blogContent = {
       title: 'Warum eine mobile Website für Handwerker unverzichtbar ist',
       excerpt: 'Mehr als die Hälfte aller Suchanfragen kommen heute vom Smartphone.',
       readingTime: '4 Min. Lesezeit',
+      linkLabel: 'Mobile-Guide lesen',
       image: '/images/daniil-komov-RdeKfL3w344-unsplash.jpg',
       seo: {
         title: 'Warum eine mobile Website für Handwerker unverzichtbar ist | SeitenArchitekt',

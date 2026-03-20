@@ -10,6 +10,7 @@ defineProps<{
     title: string
     excerpt: string
     readingTime: string
+    linkLabel: string
     image: string
   }>
 }>()
@@ -45,7 +46,7 @@ defineProps<{
             </p>
 
             <NuxtLink :to="`/blog/${post.slug}`" class="ghost-button mt-7">
-              Artikel lesen
+              {{ post.linkLabel }}
               <span>→</span>
             </NuxtLink>
           </div>

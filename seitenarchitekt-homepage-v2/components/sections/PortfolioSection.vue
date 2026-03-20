@@ -29,9 +29,9 @@ defineProps<{
       <div class="mt-14 grid gap-px bg-[rgba(201,167,106,0.14)] md:grid-cols-2">
         <article v-for="item in content.items" :key="item.title" data-reveal class="bg-[rgba(8,8,8,0.62)] px-7 py-8 sm:px-9 sm:py-10">
           <p class="tiny-kicker">{{ item.label }}</p>
-          <h3 class="mt-6 display-face text-3xl font-normal tracking-[-0.03em] text-[var(--text)] sm:text-[2.45rem]">
+          <p class="mt-6 display-face text-3xl font-normal tracking-[-0.03em] text-[var(--text)] sm:text-[2.45rem]">
             {{ item.title }}
-          </h3>
+          </p>
           <p class="mt-5 max-w-xl text-base leading-8 text-[var(--muted)]">
             {{ item.copy }}
           </p>

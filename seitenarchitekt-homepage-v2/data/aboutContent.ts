@@ -10,7 +10,7 @@ export const aboutContent = {
     titleAccent: 'Website professionell erstellen zu lassen',
     copy:
       'Ich unterstütze Handwerksunternehmen dabei, online vertrauenswürdig aufzutreten, klare Leistungen zu zeigen und aus Besuchern konkrete Anfragen zu machen.',
-    primaryCta: { label: 'Kostenloses Erstgespräch', to: '/#kontakt' },
+    primaryCta: { label: 'Erstgespräch vereinbaren', to: '/#kontakt' },
     secondaryCta: { label: 'Referenzen ansehen', to: '/portfolio' },
     image: '/images/portrait.png',
     backgroundImage: '/images/christopher-gower-m_HRfLhgABo-unsplash.jpg'
@@ -107,7 +107,7 @@ export const aboutContent = {
     title: 'Lass uns deine Website professionell aufstellen',
     copy:
       'Wenn du deine Website erstellen lassen möchtest und eine klare, professionelle Lösung suchst, die zu deinem Betrieb passt und langfristig funktioniert, lass uns sprechen.',
-    primaryCta: { label: 'Kostenloses Erstgespräch', to: '/#kontakt' },
+    primaryCta: { label: 'Website-Projekt besprechen', to: '/#kontakt' },
     secondaryCta: { label: 'Leistungen ansehen', to: '/leistungen' }
   }
 } as const

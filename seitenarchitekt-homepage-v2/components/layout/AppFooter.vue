@@ -14,7 +14,7 @@ defineProps<{
       </div>
 
       <div>
-        <h3 class="tiny-kicker">Navigation</h3>
+        <p class="tiny-kicker">Navigation</p>
         <ul class="mt-5 space-y-3 text-sm text-[var(--muted)]">
           <li v-for="item in navigation" :key="item.label">
             <NuxtLink :to="item.to" class="transition hover:text-[var(--text)]">{{ item.label }}</NuxtLink>
@@ -24,7 +24,7 @@ defineProps<{
 
       <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-1">
         <div>
-          <h3 class="tiny-kicker">Leistungen</h3>
+          <p class="tiny-kicker">Leistungen</p>
           <ul class="mt-5 space-y-3 text-sm text-[var(--muted)]">
             <li v-for="item in services" :key="item.label">
               <NuxtLink :to="item.to" class="transition hover:text-[var(--text)]">{{ item.label }}</NuxtLink>
@@ -33,7 +33,7 @@ defineProps<{
         </div>
 
         <div>
-          <h3 class="tiny-kicker">Rechtliches</h3>
+          <p class="tiny-kicker">Rechtliches</p>
           <ul class="mt-5 space-y-3 text-sm text-[var(--muted)]">
             <li v-for="item in legal" :key="item.label">
               <NuxtLink :to="item.to" class="transition hover:text-[var(--text)]">{{ item.label }}</NuxtLink>

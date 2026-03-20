@@ -45,7 +45,7 @@ export const portfolioContent = {
           'Im Fokus stehen Elektroinstallationen, Altbausanierung, Smart-Home-Lösungen und saubere technische Umsetzung für Privat- und Gewerbekunden in Berlin.',
           'Die Hero-Bildsprache und die dunkle, präzise Gestaltung unterstreichen Zuverlässigkeit, Struktur und den Anspruch an moderne Elektrotechnik.'
         ],
-        linkLabel: 'Konzeptseite ansehen ->',
+        linkLabel: 'Voltwerk-Konzept ansehen ->',
         to: '/portfolio/voltwerk-berlin.html'
       },
       {
@@ -59,7 +59,7 @@ export const portfolioContent = {
           'Die Seite priorisiert vertrauensvolle Beratung, saubere Abläufe und eine wohnliche Bildsprache, damit Badmodernisierung und Sanitärservice hochwertig und zugänglich wirken.',
           'Das Hero-Bild aus der Konzeptseite wurde direkt in die Karte übernommen, damit Stil, Stimmung und Leistungsversprechen schon in der Portfolio-Übersicht sichtbar sind.'
         ],
-        linkLabel: 'Konzeptseite ansehen ->',
+        linkLabel: 'Klarbad-Konzept ansehen ->',
         to: '/portfolio/klarbad-berlin.html'
       },
       {
@@ -73,7 +73,7 @@ export const portfolioContent = {
           'Schwerpunkte sind Innenräume, Fassaden, Renovierungen und individuelle Farbkonzepte. Die Gestaltung verbindet starke Bildwirkung mit klarer Nutzerführung.',
           'Die Kartenansicht greift das Hero-Motiv der Konzeptseite auf, damit die visuelle Handschrift des Maler- und Gestaltungskonzepts direkt wiedererkennbar ist.'
         ],
-        linkLabel: 'Konzeptseite ansehen ->',
+        linkLabel: 'Atelier-Farbe-Konzept ansehen ->',
         to: '/portfolio/atelier-farbe-berlin.html'
       },
       {
@@ -87,7 +87,7 @@ export const portfolioContent = {
           'Rohbau, Sanierung, Umbau und Ablauftransparenz werden in einem strukturierten Raster gezeigt, das auf Zuverlässigkeit und belastbare Zusammenarbeit einzahlt.',
           'Auch hier ist das Hero-Bild aus der HTML-Konzeptseite in die Portfolio-Karte integriert, damit die Seite bereits in der Auswahl ihr eigenes Profil bekommt.'
         ],
-        linkLabel: 'Konzeptseite ansehen ->',
+        linkLabel: 'Schneider-Bau-Konzept ansehen ->',
         to: '/portfolio/schneider-bau-berlin.html'
       }
     ]

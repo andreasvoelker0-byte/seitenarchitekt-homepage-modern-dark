@@ -190,11 +190,11 @@ export const homeContent = {
   },
   footer: {
     navigation: [
-      { label: 'Home', to: '/' },
-      { label: 'Über mich', to: '/ueber-mich' },
-      { label: 'Leistungen', to: '/leistungen' },
-      { label: 'Portfolio', to: '/portfolio' },
-      { label: 'Blog', to: '/blog' },
+      { label: 'Startseite', to: '/' },
+      { label: 'Mein Profil', to: '/ueber-mich' },
+      { label: 'Leistungsübersicht', to: '/leistungen' },
+      { label: 'Projektportfolio', to: '/portfolio' },
+      { label: 'Blog-Übersicht', to: '/blog' },
       { label: 'Kontaktbereich', to: '/#kontakt' }
     ],
     services: [
